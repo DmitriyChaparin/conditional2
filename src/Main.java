@@ -23,7 +23,6 @@ public class Main {
         }
         //Задание 3
         int year = 800;
-        int monthNumber = 0;
         if (year % 4 == 0 && year % 100 !=0 || year % 400 ==0) {
             System.out.println(year + " год високостный!");
         }else {
@@ -43,8 +42,7 @@ public class Main {
 
 
         //Задание 5
-        {
-        }monthNumber = 11;
+        int monthNumber = 11;
         switch (monthNumber) {
             case 12:
             case 1:
