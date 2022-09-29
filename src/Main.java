@@ -28,7 +28,7 @@ public class Main {
         }else {
             System.out.println(year + " год не високостный"); }
         //Задание 4
-        int deliveryDistance = 10, deliveryDays = 1;
+        int deliveryDistance = 40, deliveryDays = 1;
         if (deliveryDistance > 0) {
             if (deliveryDistance > 20)
             deliveryDays ++;
@@ -67,5 +67,32 @@ public class Main {
             default:
                 System.out.println("Неверно указан месяц");
         }
+        //Задача 6
+        int age = 23;
+        double salary = 10000;
+        double limit = 1;
+            if (age < 23 ) {
+            if (salary < 50000)
+            limit = salary*2;
+
+        if (salary >=50000 && salary < 80000)
+            limit = salary*2*1.2;
+
+        if (salary >=80000)
+            limit = salary*2*1.5;
+
+            System.out.println("Мы готовы вам выдать карту с лимитом " + limit + " рублей.");}
+        if (age >= 23 ) {
+            if (salary < 50000)
+                limit = salary*3;
+
+            if (salary >=50000 && salary < 80000)
+                limit = salary*3*1.2;
+
+            if (salary >=80000)
+                limit = salary*3*1.5;
+
+            System.out.println("Мы готовы вам выдать карту с лимитом " + limit + " рублей.");}
+
     }
 }
